@@ -2,12 +2,12 @@ import { ethers } from "hardhat";
 
 async function main() {
 
-  const XltToken = await ethers.getContractFactory("XltToken");
-  const xltToken = await XltToken.deploy();
+  const HamletNFTA = await ethers.getContractFactory("HamletNftC");
+  const hamletNFTA = await HamletNFTA.deploy();
 
-  await xltToken.deployed();
+  await hamletNFTA.deployed();
 
-  console.log(`xltToken contract deployted to ${xltToken.address}`);
+  console.log(`C contract deployted to ${hamletNFTA.address}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
